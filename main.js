@@ -2,13 +2,6 @@ generateRand = function(){
 	return Math.floor(Math.random() * 20);
 };
 
-$('.click-me').on('click',function(e){
-	
-
-});
-
-
-
 randomNumberStream = Rx.Observable.fromEvent($('.click-me'),'click')
 .map((x) => {
 	return generateRand();
